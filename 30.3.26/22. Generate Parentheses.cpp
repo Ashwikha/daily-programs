@@ -32,9 +32,9 @@ public:
     }
     vector<string> generateParenthesis(int n) {
         vector<string> ans;
-        string temp = "";
+        string temp = "";     
         int op = 0;
-        int cl = 0;
+        int cl = 0;          //op->open bracket   cl->close bracket
         recursive(n, op, cl, temp, ans);
         return ans;
     }
