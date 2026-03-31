@@ -1,4 +1,3 @@
-class Solution {
 /*
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
@@ -18,7 +17,7 @@ Constraints:
 
 1 <= n <= 8
 */
-
+class Solution {
 public:
     void recursive(int n, int op, int cl, string temp, vector<string>& ans) {
         if (temp.length() == (2 * n)) {
